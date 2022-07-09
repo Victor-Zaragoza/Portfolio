@@ -1,0 +1,49 @@
+<div class="text-center"><h1 class="animated fadeIn">{{project.name}}</h1></div>
+
+<hr>
+
+<div class="row animated fadeIn fast">
+    <div class="col md-4 text-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item" *ngFor="let img of project.img let i=index" [ngClass]="{'active': i == 0 }">
+                <img [src]="img" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+        <br>
+        <a [routerLink]="['/projects']" class="btn btn-outline-danger btn-block">Back</a>
+    </div>
+    
+    <div class="col md-8">
+        <div style="color: red;">
+            <h3>Used Technology: {{project.technologies}}</h3>
+        </div>
+        <hr>
+        <h4 style="color: red;">Description:</h4>
+        <p style="font-size: 20px ;">{{project.description}}</p>
+        <hr>
+        <h4 style="color: red;">Github:</h4>
+        <ul><li><h6>{{project.linkGit}}</h6></li></ul>
+        <div *ngIf="project.linkHost!==''">
+            <hr>
+            <h4 style="color: red;">Web:</h4>
+            <ul><li><h6>{{project.linkHost}}</h6></li></ul>
+            
+        </div>
+        
+    </div>
+    <a [routerLink]="['/projects']" class="btn btn-outline-danger btn-block">Back</a>
+</div>
