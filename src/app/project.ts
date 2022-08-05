@@ -1,6 +1,7 @@
 export interface Project{
     name: string;
-    description: string;
+    shortDescription: string;
+    longDescription: string;
     technologies: string;
     linkGit: string;
     linkHost: string;

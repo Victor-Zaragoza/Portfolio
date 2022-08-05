@@ -17,9 +17,4 @@ export class ProjectsComponent implements OnInit {
     this.myprojects= this.projectservice.getProjects();
     console.log(this.myprojects)
   }
-
-  ver(i:any){
-    console.log(i);
-  }
-
 }

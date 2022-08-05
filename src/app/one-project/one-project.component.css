@@ -19,3 +19,26 @@
   font-size: 55px;
   color: blue;
 }
+
+h1, h3, h4, h6, h4, p {
+  color: white; 
+}
+
+.carr{
+  margin: auto 2%;
+  
+}
+
+.hori{
+  max-height: 550px;
+  max-width: 360px;
+}
+
+@media (max-width: 580px) {
+  .ac{
+    display: flex; 
+    flex-flow: row wrap; 
+    flex-direction: column;
+  } 
+}
+  

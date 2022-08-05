@@ -1,14 +1,17 @@
+<p style="text-align: center;" class="efect">My Projects</p>
+
 <div class="card-columns">
-    <div class="card" *ngFor="let project of myprojects, let i= index">
-      <img class="card-img-top" [src]="project.img[0]" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{project.name}}</h5>
-        <p class="card-text">{{project.description}}</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-      <a [routerLink]="['/project', i]" class="mb-3 btn btn-outline-primary btn-block" >
-        Details
-      </a>
-    </div>
-    
+  <div class="card" *ngFor="let project of myprojects, let i= index">
+    <h5 class="card-title">{{project.name}}</h5>
+    <div *ngIf= "i === 0; else elseBlock" style="margin: 0 auto;"><img class="card-img-top hori" [src]="project.img[0]" alt="Card image"></div>
+    <ng-template #elseBlock><img class="card-img-top" [src]="project.img[0]" alt="Card image"></ng-template>
+      
+  <div class="card-body">
+    <h5 class="card-title">{{project.name}}</h5>
+    <p class="card-text">{{project.shortDescription}}</p>
+    <p class="card-text"><small class="text-muted"><b>{{project.technologies}}</b></small></p>
   </div>
+  
+    <a [routerLink]="['/project', i]" class="mb-3 btn btn-outline-primary btn-block" >Details</a>
+  </div>     
+</div>

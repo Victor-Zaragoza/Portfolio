@@ -1,28 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-
-      <a class="navbar-brand glitch" data-text="Victor Zaragoza" href="#">
-        <h2 >
-          < 
-         <span style="color:#EB4747 ;">Victor Zaragoza</span> 
-         />
-        </h2>
-        </a> 
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center navbar-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]= "['/home']" >Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/projects']">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]= "['/contactme']">Contact Me!</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="primary-header navbar">
+  <div>
+    <a class="navbar-brand logo" data-text="Victor Zaragoza" [routerLink]= "['/home']">
+      <h3><<span style="color:#EB4747 ;">Victor Zaragoza</span> /></h3>
+    </a> 
+  </div>
+  <button (click)="showNav()" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+  <nav>
+    <ul data-visible="false" class="primary-navigation flex" data-visible="false" id="primary-navigation">    
+      <li class="active">
+        <a class="ff-sans-cond uppercase text-white letter-spacing-2" [routerLink]= "['/home']" (click)="closeNav()"><span aria-hidden="true">00</span> Home</a>
+      </li>
+      <li>
+        <a class="ff-sans-cond uppercase text-white letter-spacing-2" [routerLink]= "['/projects']" (click)="closeNav()"><span aria-hidden="true">01</span> Projects</a>
+      </li>
+      <li>
+        <a class="ff-sans-cond uppercase text-white letter-spacing-2" [routerLink]= "['/contactme']" (click)="closeNav()"><span aria-hidden="true">02</span> Contact Me!</a>
+      </li>
+    </ul>
   </nav>
+</div>
+  
