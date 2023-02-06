@@ -1,0 +1,17 @@
+<p style="text-align: center;" class="efect">Machines Pwned Hack The Box</p>
+
+<div class="card-columns">
+  <div class="card" *ngFor="let machine of mymachines, let i= index">
+    <h5 class="card-title">{{machine.name}}</h5>
+    <div *ngIf= "i === -1; else elseBlock" style="margin: 0 auto;"><img class="card-img-top hori" [src]="machine.img[0]" alt="Card image"></div>
+    <ng-template #elseBlock><img class="card-img-top" [src]="machine.img[0]" alt="Card image"></ng-template>
+      
+  <div class="card-body">
+    <h5 class="card-title">{{machine.name}}</h5>
+    <p class="card-text">{{machine.shortDescription}}</p>
+    <p class="card-text"><small class="text-muted"><b>{{machine.technologies}}</b></small></p>
+  </div>
+  
+    <a [routerLink]="['/machines', i]" class="mb-3 btn btn-outline-primary btn-block" >Details</a>
+  </div>     
+</div>

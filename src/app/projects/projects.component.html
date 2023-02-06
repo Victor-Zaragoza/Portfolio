@@ -3,7 +3,7 @@
 <div class="card-columns">
   <div class="card" *ngFor="let project of myprojects, let i= index">
     <h5 class="card-title">{{project.name}}</h5>
-    <div *ngIf= "i === 0; else elseBlock" style="margin: 0 auto;"><img class="card-img-top hori" [src]="project.img[0]" alt="Card image"></div>
+    <div *ngIf= "i === 1; else elseBlock" style="margin: 0 auto;"><img class="card-img-top hori" [src]="project.img[0]" alt="Card image"></div>
     <ng-template #elseBlock><img class="card-img-top" [src]="project.img[0]" alt="Card image"></ng-template>
       
   <div class="card-body">

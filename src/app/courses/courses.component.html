@@ -1,9 +1,9 @@
-<p style="text-align: center;" class="efect">My Courses</p>
+<p style="text-align: center;" class="efect">Courses And Certificates</p>
 
 <div class="card-columns">
   <div class="card" *ngFor="let course of mycourses, let i= index">
     <h5 class="card-title">{{course.name}}</h5>
-    <div *ngIf= "i === 0; else elseBlock" style="margin: 0 auto;"><img class="card-img-top hori" [src]="course.img[0]" alt="Card image"></div>
+    <div *ngIf= "i === -1; else elseBlock" style="margin: 0 auto;"><img class="card-img-top hori" [src]="course.img[0]" alt="Card image"></div>
     <ng-template #elseBlock><img class="card-img-top" [src]="course.img[0]" alt="Card image"></ng-template>
       
   <div class="card-body">

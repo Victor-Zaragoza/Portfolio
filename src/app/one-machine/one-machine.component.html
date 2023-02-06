@@ -1,0 +1,25 @@
+<div class="text-center"><h1 class="animated fadeIn">{{machine.name}}</h1></div>
+  <hr>
+  <div class="row animated fadeIn fast carr ac">
+    <div class="col md-8 text-center div1">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item" *ngFor="let img of machine.img let i=index" [ngClass]="{'active': i == 0 }">
+            <div *ngIf="machine.name==='Grocery Store'; else elseBlock " class="d-flex justify-content-center"><img [src]="img" class="d-block w-100 hori"></div>
+            <ng-template #elseBlock><img [src]="img" class="d-block w-100"></ng-template>
+          </div>
+        </div>
+      </div>
+      <br>
+      <a [routerLink]="['/machines']" class="btn btn-outline-danger btn-block">Back</a>
+    </div>
+    
+    <div class="col md-4">
+      <h4 style="color: red;">Used Technologies:</h4>
+      <p style="font-size: 20px ;">{{machine.technologies}}.</p>
+      <hr>
+      <h4 style="color: red;">Description:</h4>
+      <p style="font-size: 20px ;">{{machine.longDescription}}</p>
+      <hr>
+    </div>
+  </div>

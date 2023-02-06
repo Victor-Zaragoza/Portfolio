@@ -17,7 +17,7 @@ export class OneProjectComponent implements OnInit {
       this.project= projectservice.getProject(params['id']);
     });
    }
-
+ 
   ngOnInit(): void {
   }
 

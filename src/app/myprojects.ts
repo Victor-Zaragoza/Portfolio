@@ -2,6 +2,16 @@ import{Project} from './project';
 
 export const Projects: Project[]=[
     {
+        name: 'MatchUAA',
+        shortDescription: 'Dating application focused only for students of my university. You make a registration with personal information and preferences and you can start searching among the dating options.',
+        longDescription: `Team project consisting of a dating application only at my university. I was in charge of developing the entire backend in Node JS using Express, the program has a complete crud and a basic chat.
+                            The project still has a lot to improve to be functional `,
+        technologies: 'Angular, NodeJS, Express, MySQL',
+        linkGit: 'https://github.com/UAA-Proyectos/UaaParejasBackEnd.git',
+        linkHost: '', 
+        img: ['assets/Projects/matchuaa1.png','assets/Projects/matchuaa2.png', 'assets/Projects/matchuaa3.png', 'assets/Projects/matchuaa4.png', 'assets/Projects/matchuaa5.png', 'assets/Projects/matchuaa6.png']
+    },
+    {
         name: 'Grocery Store',
         shortDescription: 'Online Grocery Store deploy on Firebase, with user registration, CRUD for the admin, location via google maps and the possibility of being exported to Android and IOS.',
         longDescription: `Personal project based on various courses and Ionic documentation. As an administrator we can explore the store, add new products and edit their data. We can also see the pending orders and change their status. As users, we can register, assign our address with google maps, buy products, view our shopping cart and view our shopping history.
