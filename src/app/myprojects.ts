@@ -2,6 +2,24 @@ import{Project} from './project';
 
 export const Projects: Project[]=[
     {
+        name: 'ECS Rolling Restart Tool',
+        shortDescription: 'Python script that allows you to log in to your AWS account, select a cluster and a service and perform a rolling restart of all EC2 instances in addition to first performing a horizontal scaling using the linked autoscaling group to ensure availability.',
+        longDescription: `In progress `,
+        technologies: 'Python, AWS, ASG, EC2, ECS',
+        linkGit: 'In progress',
+        linkHost: '', 
+        img: ['assets/Courses/aws.png']
+    },
+    {
+        name: 'StarShip control center',
+        shortDescription: 'Go program that simulates the start ship control center .',
+        longDescription: `In progress `,
+        technologies: 'Go, SQL  ',
+        linkGit: 'In progress',
+        linkHost: '', 
+        img: ['assets/Courses/go.jpg']
+    },
+    {
         name: 'MatchUAA',
         shortDescription: 'Dating application focused only for students of my university. You make a registration with personal information and preferences and you can start searching among the dating options.',
         longDescription: `Team project consisting of a dating application only at my university. I was in charge of developing the entire backend in Node JS using Express, the program has a complete crud and a basic chat.

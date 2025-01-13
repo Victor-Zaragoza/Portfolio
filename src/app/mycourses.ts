@@ -2,6 +2,46 @@ import{Course} from './course';
 
 export const Courses: Course[]=[
     {
+        name: 'Certified Kubernetes Administrator',
+        shortDescription: 'Introduction to Kubernetes and moves through the process of creation, managing, and storing applications before providing labs on setting up and managing clusters.',
+        acquiredKnowledge: `Introduction to Kubernetes and moves through the process of creation, managing, and storing applications before providing labs on setting up and managing clusters.`,
+        platform: '-',
+        duration: '8 Hours',
+        img: ['assets/Courses/kubernetes.png']
+    },
+    {
+        name: 'AWS Cloud Practitioner',
+        shortDescription: 'Explore aws concepts, fundamental understanding of the AWS cloud, services, and terminology.',
+        acquiredKnowledge: `Explore aws concepts, fundamental understanding of the AWS cloud, services, and terminology.`,
+        platform: '-',
+        duration: '9 Hours',
+        img: ['assets/Courses/aws.png']
+    },
+    {
+        name: 'Developing Infrastructure as Code with Terraform',
+        shortDescription: 'Introduction to the philosophy behind IaC and covers how to implement IaC in your own enverinment using terraform.',
+        acquiredKnowledge: `Introduction to the philosophy behind IaC and covers how to implement IaC in your own enverinment using terraform.`,
+        platform: 'OReally',
+        duration: '6 Hours',
+        img: ['assets/Courses/hashicorp-terraform.png']
+    },
+    {
+        name: 'Mastering Go Programming',
+        shortDescription: 'This course gives deep insight into the fundametal mechanics behind the language, and also covers extensive practical topics on Go for modern software archictures.',
+        acquiredKnowledge: `This course gives deep insight into the fundametal mechanics behind the language, and also covers extensive practical topics on Go for modern software archictures.`,
+        platform: 'OReally',
+        duration: '9 Hours',
+        img: ['assets/Courses/go.jpg']
+    },
+    {
+        name: 'Introduction to Docker and Containers',
+        shortDescription: 'In this course we introduce to docker and containerization technology, we learn how to run containers successfuly, and how to professionally containerize applications with dockerfile.',
+        acquiredKnowledge: `In this course we introduce to docker and containerization technology, we learn how to run containers successfuly, and how to professionally containerize applications with dockerfile.`,
+        platform: 'OReally',
+        duration: '6 Hours',
+        img: ['assets/Courses/docker.png']
+    },
+    {
         name: 'Introduction to Cybersecurity',
         shortDescription: 'Explore the exciting field of cybersecurity and why cybersecurity is a future-proof career.',
         acquiredKnowledge: `In my first approach to security I was able to learn about the various levels of protection, 
